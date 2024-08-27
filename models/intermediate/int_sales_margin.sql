@@ -1,5 +1,7 @@
 SELECT 
     products_id,
+    date_date,
+    orders_id,
     CAST(purchase_price as float64) AS purchase_price,
     quantity,
     revenue,
