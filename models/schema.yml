@@ -37,7 +37,7 @@ sources:
         description: paid source bing
       - name: criteo
         identifier: raw_gz_criteo
-        description: paid source bing
+        description: paid source criteo
       - name: facebook
         identifier: raw_gz_facebook
         description: paid source bing
