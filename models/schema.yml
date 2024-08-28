@@ -32,15 +32,35 @@ sources:
       - name: adwords
         identifier: raw_gz_adwords
         description: paid source adwords
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || campaign_key)"
+          - not_null:
+              column_name: ads_cost
       - name: bing
         identifier: raw_gz_bing
         description: paid source bing
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || campaign_key)"
+          - not_null:
+              column_name: ads_cost
       - name: criteo
         identifier: raw_gz_criteo
         description: paid source criteo
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || campaign_key)"
+          - not_null:
+              column_name: ads_cost
       - name: facebook
         identifier: raw_gz_facebook
         description: paid source bing
+        tests:
+          - unique:
+              column_name: "(date_date || paid_source || campaign_key)"
+          - not_null:
+              column_name: ads_cost
           
           
               
